@@ -41,6 +41,17 @@
   <footer><span>© <span id="year"></span> Premium World</span><span>Made for curious minds.</span></footer>
   <script src="app.js"></script>
 </body>
+  
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register(
+      "/Premium-world/service-worker.js"
+    );
+  });
+}
+</script>
+  
 </html>
 <link rel="manifest" href="/Premium-world/manifest.json">
 <meta name="theme-color" content="#09090d">
