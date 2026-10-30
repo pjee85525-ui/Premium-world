@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Discover useful apps and visit their official websites from Premium World.">
+  <title>Premium World — Discover Apps</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Premium World home"><span class="brand-mark">PW</span><span>PREMIUM <b>WORLD</b></span></a>
+    <a class="telegram" href="https://t.me/apkpremiumworld" target="_blank" rel="noopener">Telegram ↗</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">DISCOVER • EXPLORE • CONNECT</div>
+      <h1>Everything useful,<br><span>in one world.</span></h1>
+      <p>Explore apps, discover useful tools, and continue safely through their official websites.</p>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search apps or categories…" aria-label="Search apps"></label>
+      <div class="chips" id="chips">
+        <button class="chip active" data-category="All">All apps</button>
+        <button class="chip" data-category="Creativity">Creativity</button>
+        <button class="chip" data-category="Productivity">Productivity</button>
+        <button class="chip" data-category="Learning">Learning</button>
+        <button class="chip" data-category="Entertainment">Entertainment</button>
+      </div>
+    </section>
+    <section class="section-head"><div><div class="eyebrow">HANDPICKED TOOLS</div><h2>Explore apps</h2></div><span id="count" class="count">6 apps</span></section>
+    <section class="grid" id="appGrid" aria-live="polite"></section>
+    <section class="join">
+      <div><div class="eyebrow">STAY IN THE LOOP</div><h2>More discoveries await.</h2><p>Join our Telegram community for updates. Replace this button link with your own channel URL before publishing.</p></div>
+      <a class="button gold" href="https://t.me/apkpremiumworld" target="_blank" rel="noopener">Visit Telegram ↗</a>
+    </section>
+    <section class="contact"><div><div class="eyebrow">GET IN TOUCH</div><h2>Contact Premium World</h2><p>Questions or suggestions? Send us an email.</p></div><a class="button gold" href="mailto:pjee85525@gmail.com">pjee85525@gmail.com ↗</a></section>
+    <section class="note"><b>A quick note</b><p>Premium World is an independent app directory and is not affiliated with the apps listed. We do not provide paid subscriptions, cracked apps, or modified APKs. Always download from the official developer and review each app's terms.</p></section>
+  </main>
+  <footer><span>© <span id="year"></span> Premium World</span><span>Made for curious minds.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
